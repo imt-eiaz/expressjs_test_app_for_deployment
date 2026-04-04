@@ -27,7 +27,7 @@ jobs:
           host: ec2-16-16-67-150.eu-north-1.compute.amazonaws.com
           username: ubuntu
           key: ${{ secrets.SSH_KEY }}
-          source: "."
+          source: "package.json,package-lock.json,server.js,src/**,public/**"
           target: "/var/www/expressjs_test_app_for_deployment"
           rm: false
           overwrite: true
